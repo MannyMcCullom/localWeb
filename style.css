@@ -1,0 +1,129 @@
+:root {
+    --length: 259;
+}
+
+body {
+    background-image: url("background.jpg");
+}
+
+h1 {
+    font: optional;
+}
+
+#headerContainer {
+    margin: auto;
+    width: fit-content;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+.headerContainer {
+    background-color: black;
+}
+
+.infoCard {
+    /* width:fit-content; */
+    background-color: black;
+    padding: 10px;
+    border-radius: 1px;
+    border-style: solid;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+    text-decoration-color: blue;
+    border-color: green;
+}
+
+#pageContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* top: 75px; */
+    width: 100%;
+}
+
+.pageContainer {
+    background-color: aqua;
+}
+
+.text {
+    /* margin-top:; */
+    color: white;
+    font-size: 20px;
+}
+
+#menuContainer {
+    margin:auto;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    /* gap: 1; */
+    background-color: red;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    /* height: 100px; */
+    /* opacity: 0.6; */
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+    /* align-items:stretch; */
+    /* align-self: center; */
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+}
+
+.menuItem {
+    width: fit-content;
+    height: fit-content;
+    /* height: min-content; */
+    /* height: max-content; */
+    /* height: 600px; */
+    /* position: relative; */
+    /* left:-250px; */
+    border-radius: 1px;
+    border-style: solid;
+    border-color: orange;
+    padding: 4px;
+    text-align: center;
+    background-color: black;
+    /* margin: 5px; */
+    /* float:left;
+    display:inline; */
+}
+
+.whiteOut {
+    /* color: white;
+    background-color: white; */
+    animation-name: whiteOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.mouseOn {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+@keyframes whiteOut {
+    from {background-color: white;}
+    to {background-color: tan;}
+  }
+
+  .whiteText {
+    /* color: white;
+    background-color: white; */
+    animation-name: whiteText;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes whiteText {
+    from {color: white;}
+    to {color: black;}
+  }
