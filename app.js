@@ -52,20 +52,25 @@ for (item of haircuts) {
     menuItem.addEventListener("mouseenter", ()=>{
         console.log("entered:")
         // menuItem.classList.toggle("pointer");
-        menuItem.classList.toggle("whiteOut");
-        menuItem.classList.toggle("mouseOn");
+        // menuItem.classList.toggle("whiteOut");
+        // menuItem.classList.toggle("mouseOn");
     })
 
     menuItem.addEventListener("mouseleave", ()=>{
         console.log("left:")
         // menuItem.classList.toggle("pointer");
-        menuItem.classList.toggle("whiteOut");
-        menuItem.classList.toggle("mouseOn");
+        // menuItem.classList.toggle("whiteOut");
+        // menuItem.classList.toggle("mouseOn");
         text.innerHTML = item.name;
     })
 
     menuItem.addEventListener("click", ()=>{
         console.log("cliked:")
+        menuItem.classList.add("whiteOut");
+        setTimeout(()=>{
+            menuItem.classList.remove("whiteOut");
+        },500)
+
     })
 
     menu.appendChild(menuItem);
