@@ -39,11 +39,12 @@ const menu = document.querySelector("#menuItems");
 
 for (item of haircuts) {
     const menuItem = document.createElement("div");
+    const pic = item.picture;
     menuItem.classList.add("menuItem")
-    const pic = document.createElement("img");
-    pic.setAttribute("src", item.picture);
-    pic.classList.add("picture");
-    menuItem.append(pic);
+    const picEl = document.createElement("img");
+    picEl.setAttribute("src", pic);
+    picEl.classList.add("picture");
+    menuItem.append(picEl);
     const text = document.createElement("div");
     text.classList.add("text");
     text.textContent = item.name;
@@ -70,10 +71,17 @@ for (item of haircuts) {
         setTimeout(()=>{
             menuItem.classList.remove("whiteOut");
         },250)
-
+        changeImage(pic);
+        console.log(pic);
     })
 
     menu.appendChild(menuItem);
 }
 
 const header = document.querySelector('#headerContainer');
+
+const mainImage = document.querySelector("#displayedImage");
+function changeImage(newImage) {
+    mainImage.setAttribute("src", newImage);
+} 
+changeImage("haircut2.jpg");

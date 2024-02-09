@@ -56,11 +56,7 @@ h1 {
     font-size: 20px;
 }
 
-/* #displayCard {
-    display: inline;
-} */
-
-.image {
+#displayedImage {
     margin-left: 25%;
     width: 50%;
     border-radius: 5px;
