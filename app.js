@@ -12,7 +12,7 @@ function loadCuts(arr, num = 0) {
     }
 }
 
-loadCuts(haircuts, 7);
+loadCuts(haircuts, 17);
 
 const title = document.querySelector(".headerContainer");
 title.addEventListener("click", ()=>{
