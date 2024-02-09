@@ -53,8 +53,8 @@ h1 {
 }
 
 #displayedImage {
-    margin-left: 37.5%;
-    width: 25%;
+    margin-left: 25%;
+    width: 50%;
     border-radius: 5px;
     border-style: solid;
 }
@@ -68,8 +68,8 @@ h1 {
 }
 
 .picture {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    /* height: 100px; */
 }
 
 .menuItem {
@@ -79,7 +79,8 @@ h1 {
     border-style: solid;
     text-align: center;
     background-color: var(--color1);
-    margin: auto;
+    margin: 5px;
+
 }
 
 .whiteOut {
