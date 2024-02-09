@@ -48,7 +48,7 @@ h1 {
 }
 
 .pageContainer {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .text {
@@ -63,21 +63,9 @@ h1 {
     border-style: solid;
 }
 
-.descript {
-    margin: auto;
-    width: fit-content;
-    text-align: center;
-    border-radius: 5px;
-    border-style: solid;
-    background-color: var(--color1);
-    /* display:inline-block; */
-}
-
-#menuContainer {
-    /* margin:auto; */
+/* #menuContainer {
     background-color: greenyellow;
-    /* display:inline; */
-}
+} */
 
 #menuItems {
     display: grid;
