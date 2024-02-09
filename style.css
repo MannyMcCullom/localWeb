@@ -1,5 +1,6 @@
 :root {
     --length: 259;
+    --color1: blue;
 }
 
 body {
@@ -11,6 +12,8 @@ h1 {
 }
 
 #headerContainer {
+    /* position: ; */
+    top:0px;
     margin: auto;
     width: fit-content;
     font-size:xx-large;
@@ -26,6 +29,7 @@ h1 {
 }
 
 .infoCard {
+    bottom:0px;
     margin:auto;
     width:fit-content;
     font-size: x-large;
@@ -57,22 +61,55 @@ h1 {
     font-size: 20px;
 }
 
+#displayCard {
+    display: grid;
+}
+
+#image {
+    border-radius: 5px;
+    border-style: solid;
+    margin: auto;
+    width: 50%;
+    /* height: 50%; */
+    /* grid-column: 2 / span 1; */
+    grid-row: 1;
+}
+
+.descript {
+    /* width:200px; */
+    text-align: center;
+    /* height: 200px; */
+    border-radius: 5px;
+    border-style: solid;
+    margin: 5px;
+    background-color: var(--color1);
+    /* grid-column: 1 / span 1; */
+    grid-row: 1;
+}
+
 #menuContainer {
     margin:auto;
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
+    width: fit-content;
+    
     /* gap: 1; */
     background-color: red;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    
     /* height: 100px; */
     /* opacity: 0.6; */
     /* position: relative; */
     /* flex-wrap: wrap; */
     /* align-items:stretch; */
     /* align-self: center; */
+}
+
+#menuItems {
+    grid-row: 2;
+    grid-column: 1 / span 5;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
 .picture {
@@ -88,13 +125,13 @@ h1 {
     /* height: 600px; */
     /* position: relative; */
     /* left:-250px; */
-    border-radius: 1px;
+    border-radius: 5px;
     border-style: solid;
-    border-color: orange;
-    padding: 4px;
+    /* border-color: orange; */
+    /* padding: 4px; */
     text-align: center;
-    background-color: black;
-    /* margin: 5px; */
+    background-color: var(--color1);
+    margin: 5px;
     /* float:left;
     display:inline; */
 }
@@ -108,13 +145,13 @@ h1 {
 }
 
 .mouseOn {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     cursor: pointer;
 }
 
 @keyframes whiteOut {
     from {background-color: white;}
-    to {background-color:black;}
+    to {background-color:var(--color1);}
   }
 
   .whiteText {

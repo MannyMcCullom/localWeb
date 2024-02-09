@@ -35,7 +35,7 @@ title.addEventListener("mouseleave", ()=>{
 
 })
 
-const menu = document.querySelector("#menuContainer");
+const menu = document.querySelector("#menuItems");
 
 for (item of haircuts) {
     const menuItem = document.createElement("div");
@@ -53,14 +53,14 @@ for (item of haircuts) {
         console.log("entered:")
         // menuItem.classList.toggle("pointer");
         // menuItem.classList.toggle("whiteOut");
-        // menuItem.classList.toggle("mouseOn");
+        menuItem.classList.toggle("mouseOn");
     })
 
     menuItem.addEventListener("mouseleave", ()=>{
         console.log("left:")
         // menuItem.classList.toggle("pointer");
         // menuItem.classList.toggle("whiteOut");
-        // menuItem.classList.toggle("mouseOn");
+        menuItem.classList.toggle("mouseOn");
         text.innerHTML = item.name;
     })
 
@@ -69,7 +69,7 @@ for (item of haircuts) {
         menuItem.classList.add("whiteOut");
         setTimeout(()=>{
             menuItem.classList.remove("whiteOut");
-        },500)
+        },250)
 
     })
 
