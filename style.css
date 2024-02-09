@@ -47,25 +47,17 @@ h1 {
     width: 100%;
 }
 
-.pageContainer {
-    /* background-color: aqua; */
-}
-
 .text {
     color: white;
     font-size: 20px;
 }
 
 #displayedImage {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 37.5%;
+    width: 25%;
     border-radius: 5px;
     border-style: solid;
 }
-
-/* #menuContainer {
-    background-color: greenyellow;
-} */
 
 #menuItems {
     display: grid;
@@ -87,7 +79,7 @@ h1 {
     border-style: solid;
     text-align: center;
     background-color: var(--color1);
-    margin: 5px;
+    margin: auto;
 }
 
 .whiteOut {
