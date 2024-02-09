@@ -66,12 +66,12 @@ for (item of haircuts) {
     })
 
     menuItem.addEventListener("click", ()=>{
+        changeImage(pic);
         console.log("cliked:")
         menuItem.classList.add("whiteOut");
         setTimeout(()=>{
             menuItem.classList.remove("whiteOut");
         },250)
-        changeImage(pic);
         console.log(pic);
     })
 
